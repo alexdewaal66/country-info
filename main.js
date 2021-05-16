@@ -21,7 +21,7 @@ searchContainer.appendChild(searchButton);
 const flagNameEl = document.getElementById('flag-name');
 const summaryEl = document.getElementById('summary');
 
-appendLines(summaryEl, 'Hieronder komen de gegevens:');
+appendLines(summaryEl, 'Data will be placed here.');
 getCountryByName();
 
 setFocus();
