@@ -1,0 +1,97 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 53%, 99%);
+}
+
+#main {
+    background-color: white;
+    height: 100%;
+    box-shadow: 0 0 50px hsl(0, 53%, 98%) inset;
+    padding: 0 50px;
+}
+
+#container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+* {
+    font-family: 'GochiHand-Regular';
+}
+
+#search-container, #result {
+    border: 2px solid hsl(0, 53%, 80%);
+    border-radius: 8px;
+    padding: 1px;
+}
+
+#search-container, #result, button {
+    background-color: hsl(0, 53%, 93%);
+}
+
+#search-container.on-focus {
+    border: 2px solid hsl(0, 53%, 65%);
+}
+
+#search-container.on-blur {
+    border: 2px solid hsl(0, 53%, 80%);
+}
+
+
+#result {
+    padding: 15px;
+    margin: 15px;
+    min-width: 350px;
+    min-height: 150px;
+}
+
+input, button {
+    border-style: none !important;
+}
+
+input:focus {
+    outline-style: none;
+}
+
+#logo {
+    display: block;
+    max-height: 50%;
+}
+
+#summary {
+    margin: 1em 0;
+}
+
+.country-flag {
+    box-sizing: content-box;
+    object-fit: contain;
+    width: 90px;
+    height: 60;
+    margin: 10px;
+}
+
+@font-face {
+    font-family: 'GochiHand-Regular';
+    src: url('./assets/webfonts/GochiHand-Regular.ttf.woff') format('woff'),
+    url('./assets/webfonts/GochiHand-Regular.ttf.svg#GochiHand-Regular') format('svg'),
+    url('./assets/webfonts/GochiHand-Regular.ttf.eot'),
+    url('./assets/webfonts/GochiHand-Regular.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#flag-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: xxx-large;
+    text-transform: capitalize;
+}
